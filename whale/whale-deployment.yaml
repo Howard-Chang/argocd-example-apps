@@ -14,7 +14,7 @@ spec:
         app: whale
     spec:
       containers:
-      - image: hcwxd/kubernetes-demo
+      - image: quay.io/redhatworkshops/bgd:latest
         name: whale
         ports:
         - containerPort: 80
