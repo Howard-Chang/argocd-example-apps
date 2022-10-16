@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whale
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: whale
+  template:
+    metadata:
+      labels:
+        app: whale
+    spec:
+      containers:
+      - image: howard666/sample
+        name: whale
+        ports:
+        - containerPort: 80
