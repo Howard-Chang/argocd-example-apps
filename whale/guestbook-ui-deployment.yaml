@@ -14,7 +14,7 @@ spec:
         app: whale
     spec:
       containers:
-      - image: https://hub.docker.com/repository/docker/howard666/sample
+      - image: hcwxd/kubernetes-demo
         name: whale
         ports:
         - containerPort: 80
